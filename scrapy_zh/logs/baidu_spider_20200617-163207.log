@@ -1,0 +1,201 @@
+2020-06-17 16:32:07 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: scrapy_zh)
+2020-06-17 16:32:07 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-19.3.0-x86_64-i386-64bit
+2020-06-17 16:32:07 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_zh', 'LOG_FILE': '/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/logs/baidu_spider_20200617-163207.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'scrapy_zh.spiders', 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-17 16:32:07 [scrapy.extensions.telnet] INFO: Telnet Password: 140b2724ff185be0
+2020-06-17 16:32:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-17 16:32:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-17 16:32:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-17 16:32:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-17 16:32:09 [scrapy.core.engine] INFO: Spider opened
+2020-06-17 16:32:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-17 16:32:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-17 16:32:09 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_zh', 'LOG_FILE': '/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/logs/baidu_spider_20200617-163207.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'scrapy_zh.spiders', 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-17 16:32:09 [scrapy.extensions.telnet] INFO: Telnet Password: ab61dcf158c9c464
+2020-06-17 16:32:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-17 16:32:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-17 16:32:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-17 16:32:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-17 16:32:12 [scrapy.core.engine] INFO: Spider opened
+2020-06-17 16:32:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-17 16:32:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2020-06-17 16:32:12 [root] INFO: start request keyword=医疗 人民网, spiderDataFile=news-1.json
+2020-06-17 16:32:12 [root] INFO: start request keyword=医疗 珠海, spiderDataFile=news-2.json
+2020-06-17 16:32:16 [root] INFO: **start parse, keyword=医疗 人民网 pageNum=1
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=1	信凯尔携手慈铭博鳌,带来美式三代试管新体验	https://city.shenchuang.com/city/20200617/1546587.shtml	深圳之窗	56分钟前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=2	西安市中心医院:大数据疏通医疗资源堵点小细节筑起医患沟通桥梁	http://sn.people.com.cn/GB/n2/2020/0617/c380804-34094171.html	人民网陕西站	1小时前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=3	全时段预约就诊厦门医疗机构加强常态化疫情防控	http://fj.people.com.cn/BIG5/n2/2020/0617/c181466-34094153.html	人民网	1小时前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=4	人民体育助力四川体育产业发展	http://sports.people.com.cn/BIG5/n1/2020/0617/c202403-31750393.html	人民网	2小时前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=5	第三届进博会边招展边对接	https://m.youth.cn/qwtx/xxl/202006/t20200617_12372560.htm	中国青年网	2小时前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=6	陕西新增境外输入确诊病例1例新增境外输入无症状感染者1例	http://sn.people.com.cn/GB/n2/2020/0617/c226647-34093942.html	人民网陕西站	2小时前
+2020-06-17 16:32:16 [root] INFO: pageNum=1, pageCount=7	跨省倾倒填埋医疗危险废物1150余吨	http://health.china.com.cn/2020-06/17/content_41189071.htm	中国网	5小时前
+2020-06-17 16:32:28 [root] INFO: pageNum=1, pageCount=8	云南一招聘考试被指系外省原题通报:正核实	http://yn.people.com.cn/GB/n2/2020/0617/c378439-34093690.html	人民网	5小时前
+2020-06-17 16:32:28 [root] INFO: pageNum=1, pageCount=9	健康体检未查出异常,体检中心是否赔偿	http://gz.people.com.cn/BIG5/n2/2020/0617/c344109-34093630.html	人民网贵州站	5小时前
+2020-06-17 16:32:28 [root] INFO: pageNum=1, pageCount=10	大连医疗援藏填补西藏那曲索县医学科研空白	http://xz.people.com.cn/BIG5/n2/2020/0617/c138901-34093593.html	人民网	5小时前
+2020-06-17 16:32:28 [root] INFO: pageNum=2
+2020-06-17 16:32:28 [root] INFO: https://www.baidu.com/s?wd=%D2%BD%C1%C6+%D6%E9%BA%A3&cl=2&tn=news&rtt=4&pn=10
+2020-06-17 16:32:31 [root] INFO: **start parse, keyword=医疗 珠海 pageNum=1
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=1	冠昊生物:前12年盈利不足3.6亿1年亏损至解放前	https://baijiahao.baidu.com/s?id=1669709352183894969&wfr=spider&for=pc	和讯网	6小时前
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=2	证券时报电子报实时通过手机APP、网站免费阅读重大财经新闻资讯及...	http://epaper.stcn.com/paper/zqsb/html/epaper/index/content_1480105.htm	证券时报	15小时前
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=3	珠海和佳医疗设备股份有限公司新增对外投资	http://finance.sina.com.cn/stock/relnews/cn/2020-06-16/doc-iircuyvi8842685.shtml	新浪	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=4	格力地产成“妖”背后:免税真香还是另有蹊跷?	http://finance.sina.com.cn/roll/2020-06-16/doc-iircuyvi8812162.shtml	新浪	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=5	珠海金湾:全省唯一“中国营商环境建设示范区”	https://news.dayoo.com/gzrbrmt/202006/16/158544_53392964.htm	大洋网	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=6	家电巨头悉数入局医疗器械市场,谁能成为“中国西门子”?	https://baijiahao.baidu.com/s?id=1669638991661874915&wfr=spider&for=pc	ZAKER资讯	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=7	格力地产:涨停|疫情升级	http://news.emoney.cn/n_00_0101_514151.shtml	益盟操盘手	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=8	全国城市基本公共服务哪家强?珠海、拉萨、西宁位居前三	https://baijiahao.baidu.com/s?id=1669625032784617444&wfr=spider&for=pc	新浪财经	2020年06月16日
+2020-06-17 16:32:31 [root] INFO: pageNum=1, pageCount=9	珠海金湾两会:“有区无城”的历史面貌彻底改变	https://baijiahao.baidu.com/s?id=1669626912478455208&wfr=spider&for=pc	潇湘晨报	2020年06月16日
+2020-06-17 16:32:43 [root] INFO: pageNum=1, pageCount=10	2020珠海斗门区妇幼保健院招聘专业技术临聘人员考试通知(第二批)	http://gd.huatu.com/ylws/2020/0616/1751345.html?from=singlemessage	广东华图	2020年06月16日
+2020-06-17 16:32:43 [root] INFO: pageNum=2
+2020-06-17 16:32:43 [root] INFO: https://www.baidu.com/s?wd=%D2%BD%C1%C6+%D6%E9%BA%A3&cl=2&tn=news&rtt=4&pn=10
+2020-06-17 16:32:43 [root] INFO: **start parse, keyword=医疗 人民网 pageNum=2
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=11	高州这位大老板厉害了!致富不忘家乡,回乡扶贫济困!	https://3g.163.com/news/article/FF7LU6UA0534FP5L.html	网易新闻	2020年06月16日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=12	全国多地规培医生收入情况曝光	https://new.qq.com/omn/20200616/20200616A0VD1S00.html	腾讯新闻	2020年06月16日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=13	军队人才网_珠海2020军队文职(公共科目+新闻)密卷	http://gd.huatu.com/2020/0615/1751305.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=14	『军事人才网官方网站军队文职职位表』2020全国军队文职考试时间	http://gd.huatu.com/2020/0615/1751266.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=15	『军事人才招聘网官网』2020军队文职各省招考人数	http://gd.huatu.com/2020/0615/1751259.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=16	坐拥智能移动终端领先优势,优博讯迎物联网行业红利——优博讯...	http://www.p5w.net/stock/news/gsxw/202006/t20200615_2413038.htm	全景网	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=17	珠海格力电器经营范围新增消毒器械医疗器械等	http://www.ebrun.com/ebrungo/zb/389388.shtml	亿邦动力网	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=18	和佳医疗:关于召开2020年第二次临时股东大会的通知	http://news.10jqka.com.cn/20200615/c25678091.shtml	同花顺金融网	2020年06月15日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=19	速看|汕头第八!全国主要城市基本公共服务满意度前十名	https://3g.163.com/news/article/FF4CBN3I0545AV18.html	网易新闻	2020年06月14日
+2020-06-17 16:32:43 [root] INFO: pageNum=2, pageCount=20	工商变更:珠海格力电器股份有限公司经营范围新增消毒器械、医疗...	http://www.bianews.com/detail?id=63002	鞭牛士	2020年06月14日
+2020-06-17 16:33:08 [root] INFO: **start parse, keyword=医疗 珠海 pageNum=2
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=11	高州这位大老板厉害了!致富不忘家乡,回乡扶贫济困!	https://3g.163.com/news/article/FF7LU6UA0534FP5L.html	网易新闻	2020年06月16日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=12	全国多地规培医生收入情况曝光	https://new.qq.com/omn/20200616/20200616A0VD1S00.html	腾讯新闻	2020年06月16日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=13	军队人才网_珠海2020军队文职(公共科目+新闻)密卷	http://gd.huatu.com/2020/0615/1751305.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=14	『军事人才网官方网站军队文职职位表』2020全国军队文职考试时间	http://gd.huatu.com/2020/0615/1751266.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=15	『军事人才招聘网官网』2020军队文职各省招考人数	http://gd.huatu.com/2020/0615/1751259.html?from=singlemessage	广东华图	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=16	坐拥智能移动终端领先优势,优博讯迎物联网行业红利——优博讯...	http://www.p5w.net/stock/news/gsxw/202006/t20200615_2413038.htm	全景网	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=17	珠海格力电器经营范围新增消毒器械医疗器械等	http://www.ebrun.com/ebrungo/zb/389388.shtml	亿邦动力网	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=18	和佳医疗:关于召开2020年第二次临时股东大会的通知	http://news.10jqka.com.cn/20200615/c25678091.shtml	同花顺金融网	2020年06月15日
+2020-06-17 16:33:08 [root] INFO: pageNum=2, pageCount=19	速看|汕头第八!全国主要城市基本公共服务满意度前十名	https://3g.163.com/news/article/FF4CBN3I0545AV18.html	网易新闻	2020年06月14日
+2020-06-17 16:34:04 [root] INFO: pageNum=2, pageCount=20	工商变更:珠海格力电器股份有限公司经营范围新增消毒器械、医疗...	http://www.bianews.com/detail?id=63002	鞭牛士	2020年06月14日
+2020-06-17 16:34:04 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 22 pages/min), scraped 20 items (at 20 items/min)
+2020-06-17 16:34:04 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 21 pages/min), scraped 10 items (at 10 items/min)
+2020-06-17 16:34:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-06-17 16:34:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 1313496,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/200': 22,
+ 'elapsed_time_seconds': 116.171441,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 6, 17, 8, 34, 6, 80240),
+ 'item_scraped_count': 20,
+ 'log_count/INFO': 71,
+ 'memusage/max': 80912384,
+ 'memusage/startup': 68259840,
+ 'request_depth_max': 2,
+ 'response_received_count': 22,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2020, 6, 17, 8, 32, 9, 908799)}
+2020-06-17 16:34:06 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-06-17 16:34:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-06-17 16:34:07 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method BaiduSpider.spider_closed of <BaiduSpider 'baidu_spider' at 0x1128d9c18>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/spiders/baidu_spider.py", line 63, in spider_closed
+    self.browser.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+2020-06-17 16:34:07 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method BaiduSpider.spider_closed of <BaiduSpider 'baidu_spider' at 0x112d6c278>>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/spiders/baidu_spider.py", line 63, in spider_closed
+    self.browser.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 688, in close
+    self.execute(Command.CLOSE)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+
+2020-06-17 16:34:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 1630978,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/200': 22,
+ 'elapsed_time_seconds': 115.351044,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 6, 17, 8, 34, 7, 738944),
+ 'item_scraped_count': 20,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 65,
+ 'memusage/max': 80912384,
+ 'memusage/startup': 68259840,
+ 'request_depth_max': 2,
+ 'response_received_count': 22,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2020, 6, 17, 8, 32, 12, 387900)}
+2020-06-17 16:34:07 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-06-17 16:34:07 [root] INFO: 完成爬虫程序...
+2020-06-17 16:34:07 [root] INFO: 启动Json数据合并程序...
+2020-06-17 16:34:07 [root] INFO: 开始合并new-*.json文件
+2020-06-17 16:34:07 [root] INFO: 完成fileName=news-1.json数据合并
+2020-06-17 16:34:07 [root] INFO: 完成fileName=news.json数据合并
+2020-06-17 16:34:07 [root] INFO: 完成fileName=news-2.json数据合并
+2020-06-17 16:34:07 [root] INFO: 完成new-*.json文件，目标文件保存【/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/spider_datas/20200617/news.json】
+2020-06-17 16:34:07 [root] INFO: 完成Json数据合并程序...
+2020-06-17 16:34:07 [root] INFO: 启动数据插入Mongdb程序...
+2020-06-17 16:34:07 [root] INFO: 开始插入Json数据到Mongdb
+2020-06-17 16:34:07 [root] INFO: 完成插入Json数据到Mongdb
+2020-06-17 16:34:07 [root] INFO: 完成数据插入Mongdb程序...

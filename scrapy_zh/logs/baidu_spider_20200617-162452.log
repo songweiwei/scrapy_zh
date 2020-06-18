@@ -1,0 +1,90 @@
+2020-06-17 16:24:52 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: scrapy_zh)
+2020-06-17 16:24:52 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-19.3.0-x86_64-i386-64bit
+2020-06-17 16:24:52 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_zh', 'LOG_FILE': '/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/logs/baidu_spider_20200617-162452.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'scrapy_zh.spiders', 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-17 16:24:52 [scrapy.extensions.telnet] INFO: Telnet Password: ceaac472b3c02849
+2020-06-17 16:24:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-17 16:24:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-17 16:24:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-17 16:24:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-17 16:24:55 [scrapy.core.engine] INFO: Spider opened
+2020-06-17 16:24:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-17 16:24:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-17 16:24:55 [root] INFO: start request keyword=医疗 人民网, spiderDataFile=news-1.json
+2020-06-17 16:24:57 [root] INFO: **start parse, keyword=医疗 人民网 pageNum=1
+2020-06-17 16:24:57 [root] INFO: pageNum=1, pageCount=1	全时段预约就诊厦门医疗机构加强常态化疫情防控	http://fj.people.com.cn/BIG5/n2/2020/0617/c181466-34094153.html	人民网	1小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=2	第三届进博会边招展边对接	https://m.youth.cn/qwtx/xxl/202006/t20200617_12372560.htm	中国青年网	2小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=3	陕西新增境外输入确诊病例1例新增境外输入无症状感染者1例	http://sn.people.com.cn/GB/n2/2020/0617/c226647-34093942.html	人民网陕西站	2小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=4	跨省倾倒填埋医疗危险废物1150余吨	http://health.china.com.cn/2020-06/17/content_41189071.htm	中国网	5小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=5	云南一招聘考试被指系外省原题通报:正核实	http://yn.people.com.cn/GB/n2/2020/0617/c378439-34093690.html	人民网	5小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=6	健康体检未查出异常,体检中心是否赔偿	http://gz.people.com.cn/BIG5/n2/2020/0617/c344109-34093630.html	人民网贵州站	5小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=7	大连医疗援藏填补西藏那曲索县医学科研空白	http://xz.people.com.cn/BIG5/n2/2020/0617/c138901-34093593.html	人民网	5小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=8	民生连着民心民心汇聚民力	http://xz.people.com.cn/BIG5/n2/2020/0617/c138901-34093401.html	人民网	6小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=9	新华时评:背水一战,坚决打赢这场硬仗	http://sn.people.com.cn/n2/2020/0617/c186331-34093132.html	人民网陕西站	6小时前
+2020-06-17 16:24:58 [root] INFO: pageNum=1, pageCount=10	贩卖焦虑的医美行业,谁来打破陷阱	http://ah.people.com.cn/GB/n2/2020/0617/c358317-34093097.html	人民网安徽站	6小时前
+2020-06-17 16:24:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.baidu.com/s?wd=%D2%BD%C1%C6+%C8%CB%C3%F1%CD%F8&cl=2&tn=news&rtt=4&pn=0> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/halren/Study/Projects/Python/scrapy_zh/scrapy_zh/spiders/baidu_spider.py", line 132, in parse
+    logging.info('pageNum=\d' %(self.pageNum))
+TypeError: not all arguments converted during string formatting
+2020-06-17 16:25:11 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-06-17 16:25:11 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 451626,
+ 'downloader/response_count': 11,
+ 'downloader/response_status_count/200': 11,
+ 'elapsed_time_seconds': 15.958032,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 6, 17, 8, 25, 11, 602591),
+ 'item_scraped_count': 10,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 22,
+ 'memusage/max': 66990080,
+ 'memusage/startup': 66990080,
+ 'request_depth_max': 1,
+ 'response_received_count': 11,
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 11,
+ 'scheduler/enqueued/memory': 11,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2020, 6, 17, 8, 24, 55, 644559)}
+2020-06-17 16:25:11 [scrapy.core.engine] INFO: Spider closed (finished)
