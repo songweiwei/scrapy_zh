@@ -17,13 +17,13 @@ maxPageNum = 2
 crawlIncDays = 7
 
 # 检索关键字
-# key_word=["医疗","卫生","健康","就医","看病","医生","护士","药品","医院","医保","挂号","买药"]
-# loc_word=["广东","珠海"]
-# keyWords=[" ".join([i,j]) for i in loc_word for j in key_word]
-keyWords=[
-    '医疗 人民网',
-    '医疗 珠海'
-]
+key_word=["医疗","卫生","健康","就医","看病","医生","护士","药品","医院","医保","挂号","买药"]
+loc_word=["广东","珠海"]
+keyWords=[" ".join([i,j]) for i in loc_word for j in key_word]
+# keyWords=[
+#     '医疗 人民网',
+#     '医疗 珠海'
+# ]
 
 
 # url白名单

@@ -25,8 +25,7 @@ def runSpider(spider):
     process.start()
 
 
-
-if __name__ == '__main__':
+def main():
     # 1、增量爬取数据
     logging.info('启动爬虫程序...')
     runSpider('baidu_spider')
@@ -39,10 +38,15 @@ if __name__ == '__main__':
     logging.info('完成Json数据合并程序...')
 
     # 3、将数据加载到Mongo数据库中
-    logging.info('启动数据插入Mongdb程序...')
-    mongoUtil = MongoUtil()
-    mongoUtil.inserJson(config.spiderDataFile)
-    logging.info('完成数据插入Mongdb程序...')
+    # logging.info('启动数据插入Mongdb程序...')
+    # mongoUtil = MongoUtil()
+    # mongoUtil.inserJson(config.spiderDataFile)
+    # logging.info('完成数据插入Mongdb程序...')
+
+
+
+if __name__ == '__main__':
+    main()
 
 
 

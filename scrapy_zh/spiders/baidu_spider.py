@@ -107,7 +107,7 @@ class BaiduSpider(scrapy.Spider):
             match2 = re.findall('(\d+)年(\d+)月(\d+)日', article_publish_date)
             page_info = 'pageNum={}, pageCount={}'.format(self.pageNum, self.pageCount)
             # N小时前 或者 新闻日期>=最小增量爬虫日期
-            if len(match2) == 0 or (len(match2) > 0 and self.urlFilter(article_url) and '-'.join(match2[0]) >= minIncCrawDate):
+            if (len(match2) == 0 or (len(match2) > 0) and self.urlFilter(article_url) and '-'.join(match2[0]) >= minIncCrawDate):
                 logging.info('%s\t%s\t%s\t%s\t%s' %(page_info, article_title , article_url, article_source , article_publish_date))
                 request = scrapy.Request(url = article_url, callback= self.parse_item)
                 request.meta['title'] = article_title
@@ -164,13 +164,14 @@ class BaiduSpider(scrapy.Spider):
         :param url:
         :return: True 允许爬取， False：不允许爬取
         '''
-        filterFlag = True
+        # filterFlag = True
 
-        # filterFlag = False
-        # for whiteUrl in config.whiteUrls:
-        #     match = re.findall(whiteUrl, url)
-        #     if len(match) > 0:
-        #         filterFlag = True
-        #         break
+        filterFlag = False
+        for whiteUrl in config.whiteUrls:
+            match = re.findall(whiteUrl, url)
+            if len(match) > 0:
+                filterFlag = True
+                break
 
         return filterFlag
+

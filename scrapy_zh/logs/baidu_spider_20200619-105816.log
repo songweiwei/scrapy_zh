@@ -1,0 +1,874 @@
+2020-06-19 10:58:16 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: scrapy_zh)
+2020-06-19 10:58:16 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2t  10 Sep 2019), cryptography 2.1.4, Platform Windows-10-10.0.17763
+2020-06-19 10:58:16 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:16 [scrapy.extensions.telnet] INFO: Telnet Password: 705a92d6e3923426
+2020-06-19 10:58:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:20 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-19 10:58:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:20 [scrapy.extensions.telnet] INFO: Telnet Password: 45639072106ab18d
+2020-06-19 10:58:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:23 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2020-06-19 10:58:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:23 [scrapy.extensions.telnet] INFO: Telnet Password: 2740bb13ed716b9d
+2020-06-19 10:58:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:27 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
+2020-06-19 10:58:27 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:27 [scrapy.extensions.telnet] INFO: Telnet Password: 9fab2d75022f8ca3
+2020-06-19 10:58:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:30 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6026
+2020-06-19 10:58:30 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:30 [scrapy.extensions.telnet] INFO: Telnet Password: 9ed3761e0d30949d
+2020-06-19 10:58:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:34 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6027
+2020-06-19 10:58:34 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:34 [scrapy.extensions.telnet] INFO: Telnet Password: 3ef03e4df0cda8ab
+2020-06-19 10:58:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:37 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6028
+2020-06-19 10:58:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:37 [scrapy.extensions.telnet] INFO: Telnet Password: 4f52efe15f473ce6
+2020-06-19 10:58:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:41 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:41 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6029
+2020-06-19 10:58:41 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:41 [scrapy.extensions.telnet] INFO: Telnet Password: 1d3951e412067906
+2020-06-19 10:58:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:44 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:44 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6030
+2020-06-19 10:58:44 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:44 [scrapy.extensions.telnet] INFO: Telnet Password: 7323c09cae063bcf
+2020-06-19 10:58:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:48 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:48 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6031
+2020-06-19 10:58:48 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:48 [scrapy.extensions.telnet] INFO: Telnet Password: 6c2b07e25f2c3458
+2020-06-19 10:58:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:51 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6032
+2020-06-19 10:58:51 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:51 [scrapy.extensions.telnet] INFO: Telnet Password: 1c4cdd3cacb75c2a
+2020-06-19 10:58:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:55 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:55 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:55 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6033
+2020-06-19 10:58:55 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:55 [scrapy.extensions.telnet] INFO: Telnet Password: 15b6034725f3661c
+2020-06-19 10:58:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:58:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:58:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:58:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:58:59 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:58:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:58:59 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6034
+2020-06-19 10:58:59 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:58:59 [scrapy.extensions.telnet] INFO: Telnet Password: 34d87907d31a9d46
+2020-06-19 10:58:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:02 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6035
+2020-06-19 10:59:02 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:02 [scrapy.extensions.telnet] INFO: Telnet Password: 55d230db0e3975ef
+2020-06-19 10:59:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:06 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:06 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6036
+2020-06-19 10:59:06 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:06 [scrapy.extensions.telnet] INFO: Telnet Password: ffa2d702a6852d4b
+2020-06-19 10:59:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:10 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6037
+2020-06-19 10:59:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:10 [scrapy.extensions.telnet] INFO: Telnet Password: dace11684c91d89c
+2020-06-19 10:59:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:14 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6038
+2020-06-19 10:59:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:14 [scrapy.extensions.telnet] INFO: Telnet Password: 4a9a5451d3932cfa
+2020-06-19 10:59:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:18 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6039
+2020-06-19 10:59:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:18 [scrapy.extensions.telnet] INFO: Telnet Password: 9b97a103a04e003d
+2020-06-19 10:59:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:21 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6040
+2020-06-19 10:59:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:21 [scrapy.extensions.telnet] INFO: Telnet Password: c2cbc4e932b25849
+2020-06-19 10:59:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:25 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6041
+2020-06-19 10:59:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:25 [scrapy.extensions.telnet] INFO: Telnet Password: 2f90edd4cd9342fa
+2020-06-19 10:59:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:29 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6042
+2020-06-19 10:59:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:29 [scrapy.extensions.telnet] INFO: Telnet Password: a9cbd2f9ce0ae364
+2020-06-19 10:59:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:33 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:33 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6043
+2020-06-19 10:59:33 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:33 [scrapy.extensions.telnet] INFO: Telnet Password: 030facbaddeb5524
+2020-06-19 10:59:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:37 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6044
+2020-06-19 10:59:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:37 [scrapy.extensions.telnet] INFO: Telnet Password: 915edc44a9feebc8
+2020-06-19 10:59:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:42 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6045
+2020-06-19 10:59:42 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zh',
+ 'LOG_FILE': 'C:\\Users\\Sonny\\Desktop\\scrapy_zh\\scrapy_zh\\scrapy_zh/logs/baidu_spider_20200619-105816.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scrapy_zh.spiders',
+ 'SPIDER_MODULES': ['scrapy_zh.spiders']}
+2020-06-19 10:59:42 [scrapy.extensions.telnet] INFO: Telnet Password: d2b689b09028a853
+2020-06-19 10:59:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-19 10:59:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy_zh.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-19 10:59:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-19 10:59:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_zh.pipelines.NewsPipleline']
+2020-06-19 10:59:46 [scrapy.core.engine] INFO: Spider opened
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6046
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 医疗, spiderDataFile=news-1.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 卫生, spiderDataFile=news-2.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 健康, spiderDataFile=news-3.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 就医, spiderDataFile=news-4.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 看病, spiderDataFile=news-5.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 医生, spiderDataFile=news-6.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 护士, spiderDataFile=news-7.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 药品, spiderDataFile=news-8.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 医院, spiderDataFile=news-9.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 医保, spiderDataFile=news-10.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 挂号, spiderDataFile=news-11.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=广东 买药, spiderDataFile=news-12.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 医疗, spiderDataFile=news-13.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 卫生, spiderDataFile=news-14.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 健康, spiderDataFile=news-15.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 就医, spiderDataFile=news-16.json
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 看病, spiderDataFile=news-17.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 医生, spiderDataFile=news-18.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 护士, spiderDataFile=news-19.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 药品, spiderDataFile=news-20.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 医院, spiderDataFile=news-21.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 医保, spiderDataFile=news-22.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 挂号, spiderDataFile=news-23.json
+2020-06-19 10:59:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-19 10:59:46 [root] INFO: start request keyword=珠海 买药, spiderDataFile=news-24.json
