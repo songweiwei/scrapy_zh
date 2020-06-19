@@ -13,6 +13,15 @@ from scrapy_zh.settings import DEFAULT_BROWSER
 from gne import GeneralNewsExtractor
 from scrapy_zh import config
 import logging
+from selenium import webdriver
+from time import sleep
+from selenium.webdriver.chrome.options import Options
+
+# #一下三行为无头模式运行，无头模式不开启浏览器，也就是在程序里面运行的
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+
 
 class BaiduSpider(scrapy.Spider):
     name = 'baidu_spider'
@@ -22,6 +31,7 @@ class BaiduSpider(scrapy.Spider):
     chrome_opt = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     chrome_opt.add_experimental_option("prefs", prefs)
+    chrome_opt.add_argument('--headless')
     # 翻页信息
     pageNum = 1
     pageCount = 1
@@ -107,7 +117,8 @@ class BaiduSpider(scrapy.Spider):
             match2 = re.findall('(\d+)年(\d+)月(\d+)日', article_publish_date)
             page_info = 'pageNum={}, pageCount={}'.format(self.pageNum, self.pageCount)
             # N小时前 或者 新闻日期>=最小增量爬虫日期
-            if (len(match2) == 0 or (len(match2) > 0) and self.urlFilter(article_url) and '-'.join(match2[0]) >= minIncCrawDate):
+            if (len(match2)==0 and self.urlFilter(article_url)) or (len(match2)>0 and self.urlFilter(article_url) and '-'.join(match2[0]) >= minIncCrawDate):
+            # if (len(match2) == 0 or (len(match2) > 0) and self.urlFilter(article_url) and '-'.join(match2[0]) >= minIncCrawDate):
                 logging.info('%s\t%s\t%s\t%s\t%s' %(page_info, article_title , article_url, article_source , article_publish_date))
                 request = scrapy.Request(url = article_url, callback= self.parse_item)
                 request.meta['title'] = article_title
@@ -145,6 +156,7 @@ class BaiduSpider(scrapy.Spider):
         '''
 
         exetractor = GeneralNewsExtractor()
+        logging.info(response.text)
         newInfo = exetractor.extract(response.text, title_xpath='//h5/text')
         item = NewsItem()
         item['title'] = response.meta['title']

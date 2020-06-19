@@ -9,8 +9,8 @@ import logging
 class MongoUtil(object):
     def __init__(self):
         mongoUrl = self.getMongoUrl()
-        mongoclient = pymongo.MongoClient(mongoUrl)
-        self.mongoDB = mongoclient.yuqingdb
+        self.mongoclient = pymongo.MongoClient(mongoUrl)
+        self.mongoDB = self.mongoclient.yuqingdb
 
     def getMongoUrl(self):
         '''
@@ -27,6 +27,9 @@ class MongoUtil(object):
             jsonData = json.load(fp)
             self.mongoDB[mongodbConfig['newsCol']].insert(jsonData)
         logging.info('完成插入Json数据到Mongdb')
+
+    def close(self):
+        self.mongoclient.close()
 
 if __name__ == '__main__':
     mongoUtil = MongoUtil()

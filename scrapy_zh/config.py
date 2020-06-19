@@ -11,7 +11,7 @@ spiderDataFile = spiderDataPath + r'/news.json'
 
 
 # 爬取最大页数
-maxPageNum = 2
+maxPageNum = 10
 
 # 爬取增量天数
 crawlIncDays = 7
@@ -29,14 +29,21 @@ keyWords=[" ".join([i,j]) for i in loc_word for j in key_word]
 # url白名单
 white_url_dict={
     "百度资讯":"http://www.baidu.com",
-    "腾讯新闻":"http://new.qq.com",
+    "腾讯新闻":"https://new.qq.com",
     "搜狐网":"http://www.souhu.com",
-    "南方新闻网": "http://www.southcn.com",
+    "搜狐网移动":"https://m.sohu.com/",
+    "搜狐网经济http":"http://finance.sina.com.cn/",
+    "搜狐网经济https":"https://finance.sina.com.cn/",
+    "南方新闻网": "http://news.southcn.com",
+    "南方中文网":"http://zh.southcn.com/",
+    "南方快报":"http://kb.southcn.com/",
     "澎湃新闻": "http://www.thepaper.cn",
     "港澳在线": "http://www.gangaonet.cn",
     "金羊网": "http://www.ycwb.com",
+    "网易新闻移动端":"https://3g.163.com",
     "网易新闻":"http://news.163.com",
-    "潇湘晨报":"http://www.xxcb.com"
+    "潇湘晨报":"http://www.xxcb.com",
+    "人民网":"http://fj.people.com.cn"
 }
 whiteUrls=list(white_url_dict.values())
 
