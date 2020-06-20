@@ -14,7 +14,8 @@ spiderDataFile = spiderDataPath + r'/news.json'
 maxPageNum = 10
 
 # 爬取增量天数
-crawlIncDays = 7
+crawlIncDays = 20
+
 
 # 检索关键字
 key_word=["医疗","卫生","健康","就医","看病","医生","护士","药品","医院","医保","挂号","买药"]

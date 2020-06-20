@@ -156,7 +156,7 @@ class BaiduSpider(scrapy.Spider):
         '''
 
         exetractor = GeneralNewsExtractor()
-        logging.info(response.text)
+        # logging.info(response.text)
         newInfo = exetractor.extract(response.text, title_xpath='//h5/text')
         item = NewsItem()
         item['title'] = response.meta['title']
