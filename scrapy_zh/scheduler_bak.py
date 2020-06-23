@@ -3,7 +3,7 @@
 
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-from flask_apscheduler import APScheduler
+# from flask_apscheduler import APScheduler
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 import threading

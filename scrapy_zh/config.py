@@ -11,10 +11,10 @@ spiderDataFile = spiderDataPath + r'/news.json'
 
 
 # 爬取最大页数
-maxPageNum = 10
+maxPageNum = 30
 
 # 爬取增量天数
-crawlIncDays = 20
+crawlIncDays = 60
 
 
 # 检索关键字
@@ -35,16 +35,23 @@ white_url_dict={
     "搜狐网移动":"https://m.sohu.com/",
     "搜狐网经济http":"http://finance.sina.com.cn/",
     "搜狐网经济https":"https://finance.sina.com.cn/",
+    "南方网": "http://www.southcn.com",
     "南方新闻网": "http://news.southcn.com",
     "南方中文网":"http://zh.southcn.com/",
     "南方快报":"http://kb.southcn.com/",
     "澎湃新闻": "http://www.thepaper.cn",
     "港澳在线": "http://www.gangaonet.cn",
     "金羊网": "http://www.ycwb.com",
+    "金羊网新闻":"http://news.ycwb.com/",
     "网易新闻移动端":"https://3g.163.com",
     "网易新闻":"http://news.163.com",
     "潇湘晨报":"http://www.xxcb.com",
-    "人民网":"http://fj.people.com.cn"
+    "潇湘晨报数字报":"http://epaper.xxcb.cn/",
+    "人民网":"http://fj.people.com.cn",
+    "人民网yn":"http://yn.people.com.cn/",
+    "凤凰网":"http://auto.ifeng.com/",
+    "凤凰新闻网": "http://news.ifeng.com/",
+    "凤凰网财经":"http://finance.ifeng.com/",
 }
 whiteUrls=list(white_url_dict.values())
 

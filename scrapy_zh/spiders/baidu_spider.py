@@ -63,7 +63,9 @@ class BaiduSpider(scrapy.Spider):
         # 设置启动延时
         self.wait = WebDriverWait(self.browser, 5)
         # spider关闭信号和spider_spider_closed函数绑定
-        dispatcher.connect(self.spider_closed, signals.spider_closed)
+        # dispatcher.connect(self.spider_closed, signals.spider_closed)
+
+
         # 设置爬取关键字
         self.key_word = keyWord
         # 设置爬取数据保存文件名称
@@ -126,12 +128,15 @@ class BaiduSpider(scrapy.Spider):
                 request.meta['source_media'] = article_source
                 request.meta['publish_date'] = article_publish_date
                 yield request
+            elif not self.urlFilter(article_url):
+                logging.info('不在白名单-%s\t%s\t%s\t%s\t%s' % (page_info, article_title, article_url, article_source, article_publish_date))
             else:
                 self.scrawStopFlag = True
                 logging.info('停止爬取数据-%s\t%s\t%s\t%s\t%s' %(page_info, article_title , article_url, article_source , article_publish_date))
 
             # 页面数 + 1
             self.pageCount += 1
+
 
         # 翻页数 + 1
         self.pageNum += 1
